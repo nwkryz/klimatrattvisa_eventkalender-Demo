@@ -1,0 +1,216 @@
+*{
+    font-family: "Lora", serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+header {
+    background-color: rgb(153, 255, 160);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    padding: 1rem;
+    color: black;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    background-color: none;
+    align-self: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%; /* Set a maximum width */
+    word-wrap: break-word;  /* Break long words if necessary */
+    overflow: hidden;  /* Hide overflow if content is too big */
+
+}
+
+.container div:nth-child(1) img {
+    width: 7rem;
+}
+
+.container div:nth-child(2) h1 {
+    color: black;
+    align-self: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.container div:nth-child(2) a {
+    color: black;
+    text-decoration: none;
+}
+
+.container div:nth-child(3) img {
+    width: 5.5rem
+}
+
+
+@media (max-width:655px) {
+    .container div:nth-child(1) img {
+        width: 5rem;
+    }
+    
+    .container div:nth-child(2) h1 {
+       font-size: 1.5rem;
+    }
+
+    .container div:nth-child(3) img {
+        width: 4rem
+    }
+}
+
+@media (max-width:511px) {
+    .container div:nth-child(1) img {
+        width: 4rem;
+    }
+    
+    .container div:nth-child(2) h1 {
+        font-size: 1rem;
+    }
+
+    .container div:nth-child(3) img {
+        width: 3.5rem
+    }    
+}
+
+@media (max-width:385px) {
+    .container div:nth-child(1) img {
+        width: 0rem
+    }
+    
+    .container div:nth-child(2) h1 {
+        font-size: 1rem;
+    }
+
+    .container div:nth-child(3) img {
+        width: 0rem
+    }    
+}
+
+
+
+/*Main*/
+main {
+    width: 100%;
+    justify-content: center;
+}
+
+/*Footer*/
+footer {
+    background-color: rgb(153, 255, 160);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    padding: 1rem;
+    color: black;
+    text-align: center;
+}
+
+footer div:nth-child(1) {
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer div:nth-child(1) div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+footer div:nth-child(1) div:nth-child(1) a {
+    display: flex;
+    padding: 1%;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* Om oss*/
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-content: space-around;
+    justify-items: center;
+    margin: 0 auto 2rem;
+    max-width: 1200px;
+    padding-top: 20px; /* Same as header height */
+    padding-bottom: 20px; /* Ensure space for footer */
+    overflow: hidden;
+}
+
+.about img {
+    grid-column: span 1;
+    grid-row: span 2;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.about-child1 {
+    grid-column: span 1;
+    grid-row: span 1;
+    width: 85%;
+    text-align: center;
+    color: white;
+    border-radius: .5rem;
+    background-color: green;
+}
+
+.about-child1 div p {
+    text-align: left;
+    font-size: 1rem;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.about-child1 div h2 {
+    font-size: 2rem;
+}
+
+.about-child2 {
+    grid-column: span 1;
+    grid-row: span 1;
+    width: 85%;
+    text-align: center;
+    color: white;
+    border-radius: .5rem;
+    background-color: rgb(0, 67, 0);
+}
+
+.about-child2 div p {
+    text-align: left;
+    font-size: 1rem;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.about-child2 div h2 {
+    font-size: 2rem;
+}
+
+@media (max-width:768px) {
+    .about {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
+
